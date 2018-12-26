@@ -66,11 +66,11 @@ def plot(step_results, residues, errors):
     axarr[1].semilogy(errors)
 
     axarr[2].set_title("Results")
-    axarr[2].plot([tuple[0] for tuple in results], color='red', label="x1")
-    axarr[2].plot([tuple[1] for tuple in results], color='yellow', label="x2")
-    axarr[2].plot([tuple[2] for tuple in results], color='green', label="x3")
-    axarr[2].plot([tuple[3] for tuple in results], color='blue', label="x4")
-    axarr[2].plot([tuple[4] for tuple in results], color='purple', label="x5")
+    axarr[2].plot([tuple[0] for tuple in step_results], color='red', label="x1")
+    axarr[2].plot([tuple[1] for tuple in step_results], color='yellow', label="x2")
+    axarr[2].plot([tuple[2] for tuple in step_results], color='green', label="x3")
+    axarr[2].plot([tuple[3] for tuple in step_results], color='blue', label="x4")
+    axarr[2].plot([tuple[4] for tuple in step_results], color='purple', label="x5")
     plt.show()
 
 a = np.array([[-5, 0.2, 0.2, 0.2, 0.2],
